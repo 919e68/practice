@@ -5,9 +5,11 @@ from dataclasses import dataclass
 
 # @dataclass
 class ClassA:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+  def __init__(self):
+    self()
+    print('init')
 
-foo = ClassA(age=10, name='ark zeki')
-print(foo.__dict__)
+  def __call__(self):
+    print('call')
+
+foo = ClassA()
