@@ -1,0 +1,11 @@
+# python
+.venv
+__pycache__
+.pytest_cache
+htmlcov
+
+tmp
+logs
+*.log
+*.log.*
+*.env
